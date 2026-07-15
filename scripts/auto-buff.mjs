@@ -179,6 +179,10 @@ async function applyBuffToActor(actor, sourceBuff, enable) {
       const data = sourceBuff.toObject();
       delete data._id;
       foundry.utils.setProperty(data, "system.active", true);
+      // Effect origins are UUIDs relative to the SOURCE actor/item; they
+      // can't resolve on the target and throw a validation error on create.
+      // Clear them — PF1 re-derives effects from the buff's own changes.
+      for (const eff of (data.effects ?? [])) eff.origin = null;
       await actor.createEmbeddedDocuments("Item", [data], opts);
     }
   } catch (e) {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 — 2026-07-15
+
+- **Fix:** when the multi-select broadcast copies a buff to another token, strip
+  the copied Active Effects' `origin` fields. They were UUIDs relative to the
+  source actor and couldn't resolve on the target, throwing
+  `ItemBuffPF … origin: cannot be resolved without a document instance` on
+  create. (Reported broadcasting Bless to a party.)
+
 ## 1.0.0 — 2026-07-15
 
 Initial release.
