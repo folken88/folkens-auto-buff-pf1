@@ -1,0 +1,15 @@
+{
+  "folkens-auto-buff-pf1.settings.autoMatch.name": "Auto-activate buffs by name",
+  "folkens-auto-buff-pf1.settings.autoMatch.hint": "When an item, spell, or feature is used, automatically activate buffs whose name starts with the item's name (at a word boundary).",
+  "folkens-auto-buff-pf1.settings.targetMode.name": "Auto-activation target",
+  "folkens-auto-buff-pf1.settings.targetMode.hint": "Whose buffs get activated when an item is used.",
+  "folkens-auto-buff-pf1.settings.targetMode.targetElseSelf": "Targeted token(s) if any, else the user",
+  "folkens-auto-buff-pf1.settings.targetMode.selfOnly": "The acting actor only",
+  "folkens-auto-buff-pf1.settings.targetMode.selfAndTargets": "The acting actor AND targets",
+  "folkens-auto-buff-pf1.settings.minNameLength.name": "Minimum item-name length",
+  "folkens-auto-buff-pf1.settings.minNameLength.hint": "Item names shorter than this (after normalization) never auto-match, preventing junk matches.",
+  "folkens-auto-buff-pf1.settings.broadcast.name": "Broadcast to selected tokens",
+  "folkens-auto-buff-pf1.settings.broadcast.hint": "When you turn a buff on for one of several selected tokens, copy + activate that buff on the other selected tokens.",
+  "folkens-auto-buff-pf1.settings.broadcastDeactivate.name": "Broadcast deactivation too",
+  "folkens-auto-buff-pf1.settings.broadcastDeactivate.hint": "Also mirror turning a buff OFF to the other selected tokens (does not copy — only toggles buffs they already have)."
+}

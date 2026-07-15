@@ -1,0 +1,38 @@
+{
+  "id": "folkens-auto-buff-pf1",
+  "title": "Folken's Auto Buff PF1",
+  "description": "Automatic buff activation for Pathfinder 1e. Using an item/spell/feature auto-activates buffs whose name matches the item (on the target or the caster), and toggling a buff on for one of several selected tokens copies + activates it on the rest. Inspired by mkahvi's Buff Activation.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Folken Games",
+      "discord": "folken88"
+    }
+  ],
+  "esmodules": [
+    "scripts/auto-buff.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "url": "https://github.com/folken88/folkens-auto-buff-pf1",
+  "manifest": "https://github.com/folken88/folkens-auto-buff-pf1/releases/latest/download/module.json",
+  "download": "https://github.com/folken88/folkens-auto-buff-pf1/releases/latest/download/folkens-auto-buff-pf1.zip"
+}
